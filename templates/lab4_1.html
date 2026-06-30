@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>FastAPI 실습 2 - 메인</title>
+        <!-- 기존 static CSS 파일 연동 -->
+        <link rel="stylesheet" href="/static/css/style.css">
+        <style>
+            .modal-button {
+                width: auto;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-content">
+                <h1 class="header-title">FastAPI에서 <span style="color: red;">템프릿</span>으로 응답하기 실습 - 요청용</h1>
+            </div>
+        </div>
+        <hr>
+
+        <div class="content">
+            <!-- 클릭 시 각각의 캐릭터 경로로 이동 -->
+            <button class="modal-button" onclick="location.href='/lab4/둘리'">둘리</button>
+            <button class="modal-button" onclick="location.href='/lab4/도우너'">도우너</button>
+            <button class="modal-button" onclick="location.href='/lab4/또치'">또치</button>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>FastAPI 실습 2 - {{ name }}</title>
+        <!-- 기존 CSS 연동 -->
+        <link rel="stylesheet" href="/static/css/style.css">
+        <style>
+            .detail-content {
+                text-align: center;
+                margin-top: 50px;
+            }
+            .character-img {
+                max-width: 250px;
+                cursor: pointer;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                transition: transform 0.2s;
+            }
+            .character-img:hover {
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-content">
+                <h1 class="header-title">FastAPI에서 <span style="color: blue;">템프릿</span>으로 응답하기 실습 - 응답용</h1>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detail-content">
+            <img src="/static/images/{{ img_name }}" class="character-img" onclick="location.href='/lab4'" alt="{{
+  name }}">
+        </div>
